@@ -1,0 +1,630 @@
+body {
+    overflow-x: hidden;
+}
+
+/* - - - 1 - NAVBAR - - - */
+
+.container-fluid {
+    margin: -0.5% 0 -0.5% 0;
+}
+
+.navbar-brand {
+    margin: 0 4% 0 4%;
+}
+
+.flex-navbar ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 0.7rem;
+}
+
+/* Memberikan Desain Layout bagi Tombol Navbar Sblh Kanan */
+.form-flex {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4%;
+}
+.form-flex button {
+    font-size:0.8rem;
+}
+.form-flex .btn-daftar img {
+    width: 35px;
+    height: 35px;
+}
+.form-flex .btn-daftar .text {
+    font-size:0.8rem;
+}
+.btn-daftar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.btn-daftar img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.btn-daftar .text {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Meng-ignore margin kanan saat lebar layar menyentuh 768px dan kebawahnya */
+@media screen and (max-width: 992px) {
+    .form-flex {
+        margin-right: 0;
+    }
+    .btn-daftar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Saat Collapse, menyesuaikan posisi Navbarnya */
+    .flex-navbar ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Saat Collapse, menyesuaikan layout tombol 'pasang iklan' dan 'Login / Daftar' */
+    /* Mengadjust tombol Navbar Sblh kanan saat Navbar Collapse */
+    .form-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Khusus Komputer Laptop Kecil, ukuran Font dan favicon Navbar diperkecil */
+@media screen and (max-width: 992px) {
+    .flex-navbar ul li {
+        font-size: 0.8rem;
+    }
+
+    .form-flex button {
+        font-size: 0.8rem;
+    }
+    .form-flex .btn-daftar img {
+        width: 35px;
+        height: 35px;
+    }
+    .form-flex .btn-daftar span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:992px) {
+    .flex-navbar ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar-nav {
+        text-align:center;
+    }
+
+    .collapse {
+        display: inline-block;
+        text-align:center;
+    }
+
+    .collapse form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* - - - 2 - Kolom Pencarian Properti - - - */
+/* Layouting Sendiri */
+.layout-search {
+    position:relative;
+    top: 0;
+    margin-top: -7%;
+    text-align: center;
+    /*border: 3px solid green;*/
+    margin-bottom: 7%;
+}
+
+.layout-search .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0% 20% 0% 20%;
+}
+
+.layout-search .grid-container input {
+    width: 100%; /* Full-width */
+    padding: 12px 20px; /* Padding inside the input */
+    margin: 8px 0; /* Space outside the input */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth border change on focus */
+}
+
+.layout-search .grid-container input:focus {
+    border-color: yellow; /* Green border on focus */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Add glow effect */
+}
+
+@media screen and (max-width:320px) {
+    .layout-search .grid-container .search-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+    .layout-search .grid-container .search-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .layout-search .grid-container .search-icon {
+        display:block;
+        position: absolute;
+        margin-left: 55.5%;
+        margin-top: 1.25%;
+    }
+}
+
+.button-dilayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: blue;
+}
+
+.layout-search .grid-container button {
+    border:none;
+}
+
+.button-dilayout .layout-button:nth-of-type(3n+1) {
+    flex-grow: 1;
+}
+
+.button-dilayout .layout-button:nth-of-type(3n+2) {
+    flex-grow:2;
+    width: auto;
+    background-color: red;
+}
+.button-dilayout .layout-button:nth-of-type(3n+3) {
+    flex-grow:2;
+    width: auto;
+    background-color: green;
+}
+
+/* --DILAYOUT PAKAI CHATGPT-- */
+/* Flex container */
+.form-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 10px; /* Space between elements */
+    justify-content: space-between; /* Ensure space is distributed */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Style the select (dropdown) */
+.search-category {
+    flex: 1; /* Flex-grow to take available space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    min-width: 150px; /* Minimum width for small screens */
+}
+
+/* Button styling */
+.btn {
+    flex: 1; /* Allow the buttons to grow based on available space */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+  /* Make sure the flexbox items adjust properly on smaller screens */
+@media (max-width: 600px) {
+    .form-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      gap: 15px; /* Space between stacked elements */
+    }
+
+    .btn, .search-category {
+      width: 100%; /* Full-width buttons and dropdown */
+    }
+}
+
+/* Rectangle Shape  */
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 70%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-color: yellow;
+    text-align:center;
+    border-radius:24px;
+    padding: 20px;
+    z-index: -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .layout-search {
+        margin-bottom: 15%;
+    }
+
+    .rectangle {
+        height: 220px;
+        padding: 10px;
+        margin-top: -8%;
+    }
+}
+
+/* - - - 3 - GRID KATALOG - - - */
+/* Grid Katalog di layout langsung pada Per Kotaknya, karena sudah ada Bootstrap Griddingnya. */
+
+/*Pada per Grid Katalog, terdapat:*/
+/*.katalog {
+
+} */
+.grid-katalog {
+    background-color: rgb(232, 232, 232);
+}
+.pic-katalog h3 {
+    font-size: 1.2rem;
+    padding-bottom: 3%;
+}
+.title-katalog h3 {
+    font-size: 1.2rem;
+    margin-top: 7%;
+}
+.title-katalog p {
+    font-size: 0.9rem;
+}
+.specs-katalog {
+    margin: 2% 0% 0% -4%;
+}
+.specs-center img {
+    width: 22px;
+    height: 22px;
+}
+.specs-center span {
+    white-space: nowrap;
+    font-size: 0.8rem;
+    margin-top: 2%;
+}
+.btn-contact {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .pic-katalog h3 {
+        font-size: 1.1rem;
+        padding-bottom: 3%;
+    }
+    .title-katalog h3 {
+        font-size: 0.9rem;
+        margin-top: 7%;
+    }
+    .title-katalog p {
+        font-size: 0.7rem;
+    }
+    .specs-katalog {
+        margin: 8% 2% -4% -9%;
+    }
+    .specs-center {
+        margin-left: -2%;
+    }
+    .specs-center img {
+        width: 20px;
+        height: 20px;
+    }
+    .specs-center span {
+        white-space: nowrap;
+        margin-top: 2%;
+        font-size: 0.70rem;
+        padding: 0% 0%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .pic-katalog h3 {
+        font-size: 1.1rem;
+        padding-bottom: 3%;
+    }
+    .title-katalog h3 {
+        font-size: 1.1rem;
+    }
+    .title-katalog p {
+        font-size: 0.8rem;
+    }
+    .specs-katalog {
+        margin-left: -7%;
+    }
+    .specs-center img {
+        width: 18px;
+        height: 18px;
+    }
+    .specs-center span {
+        white-space: nowrap;
+        margin-top: 6%;
+        font-size: 0.6rem;
+    }
+    .btn-contact {
+        font-size: 0.7rem;
+    }
+}
+
+/* - - - 4 - BANNER - - - */
+
+.banner img {
+    max-height: 400px;
+    object-fit: cover;
+    width:100vw;
+    max-width:100vw;
+    /* margin-left: calc(-50vw + 50%); */
+    margin: 0 calc(-50vw + 50%);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    margin-top:4%;
+}
+
+/* - - - 4 - FOOTER - - - */
+
+/*.footer-background {
+    object-fit: cover;
+    width:100vw;
+    max-width:100vw; */
+    /* margin-left: calc(-50vw + 50%); */
+    /* margin: 0 calc(-50vw + 50%);
+    background-color: #eeeee4;
+} */
+.footer-background {
+    background-color: #eeeee4;
+    margin-right: -3%; /* Karena container membuat BG color tidak ke-kanan */
+}
+
+.banner-footer {
+    margin: 0 0 -10% 0;
+}
+.footer-button button {
+    background-color: transparent;
+    border:none;
+}
+.footer div h3 {
+    font-size: 1.3rem;
+}
+.footer div button {
+    font-size: 0.8rem;
+    margin-bottom: 1%;
+}
+/* h3 nya newsletter dibiarkan default */
+.footer .footer-kanan .newsletter-title {
+    font-size: 1.6rem;
+}
+
+.footer-kanan .follow-sosmed-align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    /*margin: auto;*/
+}
+
+.sosmed-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    /*border: 3px solid white;*/
+    width: 50%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Adjusting 'Follow Our Social Media' Title to the Middle utk min-width diatas 992px */
+/*@media screen and (min-width:1024px) and (max-width: 1199px) {
+    .follow-sosmed-align h3 {
+        margin-left: 0% !important;
+    }
+    .follow-sosmed-align .sosmed-icons {
+        margin-left: 12%;
+    }
+}
+/* Ini diterapkan karena sempat halaman screen width diantara ini tidak kebaca, jadi di-forcekan */
+/*@media screen and (min-width:1023px) and (max-width: 1024px) {
+    .follow-sosmed-align h3 {
+        margin-left: -25%;
+    }
+    .follow-sosmed-align .sosmed-icons {
+        margin-left: 12%;
+    }
+}
+*/
+
+/* Adjust 'Follow Our Social Media' h3 to the center */
+@media screen and (min-width: 992px) {
+    .follow-sosmed-align h3 {
+        margin-left: 24% !important;
+    }
+}
+
+
+/*@media screen and (min-width: 992px) {
+    .footer-kanan .follow-sosmed-align {
+        margin-left: 20%;
+    }
+    .sosmed-icons {
+        margin-left:17%;
+    }
+    /*.footer-kanan .newsletter-align .adjust-form {
+        margin-right: -12%;
+    }*/
+/*} */
+
+.sosmed-icons .sosmed-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Before: min-width:320px, max-width:1024px */
+@media screen and (min-width:320px) and (max-width:1024px) {
+    .panel .sub-panel .adjust-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -20%;
+        margin-right: -12.5%;
+    }
+
+    .panel .sub-panel .adjust-form .email-button-css {
+        margin-bottom: 2%;
+    }
+
+    .panel .sub-panel .adjust-form .button-footer-css {
+        width: 210%;
+        margin-left: -55%;
+    }
+}
+
+@media screen and (min-width:320px) {
+    /* Adjusting Panel & Sub-Panel */
+    .panel {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .panel .sub-panel {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .panel .sub-panel .footer-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* Adjusting Newsletter Footer */
+    .panel .sub-panel .newsletter-align {
+        margin: 0% 3% 5% 3%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    /* Adjusting Panel & Sub-Panel */
+    .panel {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .panel .sub-panel {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .panel .sub-panel:nth-of-type(3n+1) button,
+    .panel .sub-panel:nth-of-type(3n+2) button {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    
+    .panel .sub-panel:nth-of-type(3n+1),
+    .panel .sub-panel:nth-of-type(3n+2) {
+        width: 30%;
+    }
+    
+    .panel .sub-panel h3 {
+        text-align:left;
+        margin-left: 10%;
+    }
+    
+    /* Adjusting Newsletter Footer */
+    
+    .panel .sub-panel:nth-of-type(3n+3) p {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .panel .sub-panel.sub-panel:nth-of-type(3n+3) {
+        width: 65%;
+        padding-right: 5%;
+    }
+
+    /* Khusus adjust Button Footernya Newsletter */
+
+    .panel .sub-panel .adjust-form {
+        display: block;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .panel .sub-panel .newsletter-align {
+        margin-left: 10%;
+    }
+
+    .panel .sub-panel .adjust-form {
+        display: flex;
+        flex-direction: row;
+        margin-left: -6%;
+    }
+
+    .panel .sub-panel .adjust-form .email-button-css {
+        margin-bottom: 0%;
+        width:100%;
+    }
+
+    .panel .sub-panel .adjust-form .button-footer-css {
+        width: auto;
+        margin-left: auto;
+    }
+
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 1023px) and (max-width: 1023px)">
+
+    <!-- Link to the favicon -->
+    <link rel="icon" type="image/png" href="favicon/icons8-property-ios-17-filled-32.png">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CompanyName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-navbar" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Berita Properti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Proyek Properti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ketentuan & FAQ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Panduan Properti</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Ketentuan</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="form-flex">
+                    <button class="btn btn-outline-success me-2" type="submit">Pasang Iklan</button>
+                    <button class="btn btn-dark btn-daftar" type="submit">
+                        <img class="me-2" src="images/call_icon.png">
+                        <span class="text">Login/Daftar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="container" style="margin-bottom:5%;">
+        <div class="banner">
+            <img src="images/header_banner.png">
+            <!-- style="max-width:100%; height: auto;" -->
+        </div>
+    </div>
+    <!-- Kolom Search Properti -->
+    <div class="layout-search">
+        <form action="#" class="gridding">
+            <div class="grid-container">
+                <input type="text" class="search-input" placeholder="Pencarian Properti Anda...">
+                <span class="search-icon">🔍</span>
+                <div class="form-container">
+                    <select class="search-category">
+                        <option value="">Pilih Lokasi</option>
+                        <option value="1">Mulyorejo</option>
+                        <option value="2">Gubeng</option>
+                        <option value="3">Dkk...</option>
+                    </select>
+            
+                    <button type="button" class="btn btn-light">Beli</button>
+                    <button type="button" class="btn btn-light">Sewa</button>
+                    <div class="rectangle"></div>
+                </div>
+                
+                <!--<div class="button-dilayout">
+                    <div class="layout-button">
+                        <select class="search-category">
+                            <option value="">Pilih Lokasi</option>
+                            <option value="1">Mulyorejo</option>
+                            <option value="2">Gubeng</option>
+                            <option value="3">Dkk...</option>
+                        </select>
+                    </div>
+                    <div class="layout-button">
+                        <!--<button class="layout-button">Beli</button>-->
+                        <!--<button type="button" class="btn btn-light">Beli</button>
+                    </div>
+                    <div class="layout-button">
+                        <!--<button class="layout-button">Sewa</button>-->
+                        <!--<button type="button" class="btn btn-light">Sewa</button>
+                    </div>
+                </div>-->
+            </div>
+        </form>
+    </div>
+
+    <!-- Grid Katalog Pilihan Rumah -->
+    <h2 class="text-center mb-3">Rekomendasi Properti untuk anda</h2>
+    <div class="container text-center mb-5" style="width: 75%;">
+        <div class="row justify-content-center">
+            <!-- Katalog-1: Dijual rumah jatikramat -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <!--<div class="p-3" style="background-color: yellow;">
+                    
+                </div>-->
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp1.150.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual rumah Jatikramat Kav B...</h3>
+                        <p class="text-muted mb-3">DIJUAL RUMAH 2 LANTAI BARU...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 90m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 124m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+
+            <!-- Katalog-2: Dijual Rumah Baru Gress Bekasi... -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp950.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual Rumah Baru Gress Bekasi...</h3>
+                        <p class="text-muted mb-3">ADA CARPORT, TAMAN RUMAH BARU...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 112m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 112m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+
+            <!-- Katalog-3: Dijual Rumah Luas Tangerang -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp2.450.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual Rumah Luas Tangerang...</h3>
+                        <p class="text-muted mb-3">DIJUAL RUMAH MASIH TERAWAT...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 200m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 180m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+
+            <!-- Katalog-4: Dijual rumah jatikramat -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <!--<div class="p-3" style="background-color: yellow;">
+                    
+                </div>-->
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp1.150.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual rumah Jatikramat Kav B...</h3>
+                        <p class="text-muted mb-3">DIJUAL RUMAH 2 LANTAI BARU...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 90m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 124m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+
+            <!-- Katalog-5: Dijual Rumah Baru Gress Bekasi... -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp950.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual Rumah Baru Gress Bekasi...</h3>
+                        <p class="text-muted mb-3">ADA CARPORT, TAMAN RUMAH BARU...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 112m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 112m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+
+            <!-- Katalog-6: Dijual Rumah Luas Tangerang -->
+            <div class="col-md-4 col-sm-6 my-3 katalog">
+                <div class="p-3 grid-katalog">
+                    <div class="bg-light mb-2 pic-katalog">
+                        <img src="images/house_img.png" alt="House Image" class="img-fluid">
+                        <h3 class="mt-2">Rp2.450.000.000,-</h3>
+                    </div>
+                    <div class="title-katalog">
+                        <h3 class="font-weight-bold">Dijual Rumah Luas Tangerang...</h3>
+                        <p class="text-muted mb-3">DIJUAL RUMAH MASIH TERAWAT...</p>
+                    </div>
+                    <!-- Specifications Icons -->
+                    <div class="row text-start text-orange specs-katalog">
+                        <div class="col-6 mb-2 d-flex specs-center"> <!-- class = align-items-center -->
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LT:</b> 200m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>LB:</b> 180m²</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KT:</b> 3</span>
+                        </div>
+                        <div class="col-6 mb-2 d-flex specs-center">
+                            <img src="favicon/icons8-property-ios-17-filled-32.png" alt="icon" class="me-2" width="32" height="32">
+                            <span><b>KM:</b> 2</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light w-75 mt-3 btn-contact">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Banner -->
+    <div class="container">
+        <div class="banner">
+            <img src="images/imgClickOutput_banner.png">
+            <!-- style="max-width:100%; height: auto; -->
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-background">
+    <div class="container text-center">
+        <div class="banner banner-footer">
+            <div class="footer panel"> <!-- row footer -->
+                <!-- Tentang -->
+                <div class="footer-kiri sub-panel"> <!-- col -->
+                    <h3 style="font-weight: bold;">TENTANG</h3> <!--di h3 kiri ini sempat ada style margin-bottom: 2%; -->
+                    <div class="footer-button align-button">
+                        <button><span>Syarat dan Ketentuan</span></button>
+                        <button>Kebijakan Privasi</button>
+                        <button>Hak Cipta</button>
+                        <button>Tentang Kami</button>
+                    </div>
+                </div>
+                <!-- Panduan -->
+                <div class="footer-tengah sub-panel"> <!-- col -->
+                    <h3 style="font-weight: bold;">PANDUAN</h3>
+                    <div class="footer-button align-button">
+                        <button>Akad Sertifikat</button>
+                        <button>Pengajuan KPR / KPA</button>
+                        <button>Update Harga NJOP</button>
+                        <button>Penawaran Bunga Bank</button>
+                        <button>Apa itu AJB?</button>
+                        <button>Laporan Dinamika Pasar</button>
+                        <button>Peta Lokasi Proyek</button>
+                        <button>Pembangunan Lokal</button>
+                    </div>
+                </div>
+                <!-- Langganan Newsletter -->
+                <div class="footer-kanan sub-panel"> <!-- col-5 -->
+                    <h3 class="newsletter-title newsletter-align">Mari berlangganan Newsletter kami melalui E-mail</h3>
+                    <div class="container text-center newsletter-align" style="margin-bottom: 4%;">
+                        <div class="row adjust-form">
+                            <div class="col-8">
+                                <input type="text" class="form-control email-button-css" placeholder="Masukkan Alamat E-mail Anda" aria-label="Masukkan Alamat E-mail Anda">
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-primary button-footer-css" style="font-size: 15px; margin-right:65%;">Kirim</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follow-sosmed-align">
+                        <h3>FOLLOW OUR SOCIAL MEDIA</h3> <!-- margin-left: 27.5%; -->
+                        <div class="sosmed-icons">
+                            <div class="sosmed-icon"><img src="sosmed-icon/fb-icon-sosmed.png" alt="FB Icon Sosmed"></div>
+                            <div class="sosmed-icon"><img src="sosmed-icon/ig-icon-sosmed.png" alt="IG Icon Sosmed"></div>
+                            <div class="sosmed-icon"><img src="sosmed-icon/x-icon-sosmed.png" alt="X Icon Sosmed"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
